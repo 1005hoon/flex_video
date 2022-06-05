@@ -1,0 +1,13 @@
+{
+	"name": "flex_video",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "hoon <hoonnotes@naver.com>",
+	"license": "MIT",
+	"scripts": {
+		"style": "sass --watch styles/styles.scss css/styles.css"
+	},
+	"devDependencies": {
+		"sass": "^1.52.2"
+	}
+}
