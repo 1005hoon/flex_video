@@ -32,6 +32,8 @@ main header {
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
+  position: relative;
+  z-index: 3;
 }
 main header h1 {
   color: #fff;
@@ -61,6 +63,9 @@ main section {
   height: 100%;
   padding-top: 10vh;
   display: flex;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
 }
 main section article {
   flex: 1;
@@ -162,6 +167,52 @@ main nav ul li {
 main nav ul li a {
   font-size: 18px;
   color: #bbb;
+}
+main aside {
+  width: 100%;
+  height: 100%;
+  background: #333;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 2;
+  padding: 5vw;
+  padding-left: 20%;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: 0.5s;
+}
+main aside.on {
+  opacity: 1;
+  left: 0%;
+}
+main aside .text-box {
+  width: 25%;
+}
+main aside .text-box h2 {
+  font: 300 150px/1 "Alegreya Sans SC";
+  color: #ddd;
+  margin-bottom: 30px;
+}
+main aside .text-box p {
+  font: 18px/1.2 "arial";
+  color: #777;
+}
+main aside .video-box {
+  width: 72%;
+  padding-top: 175px;
+}
+main aside .video-box video {
+  width: 100%;
+}
+main aside .btn-close {
+  position: absolute;
+  top: 150px;
+  right: 5vw;
+  font: 16px/1 "arial";
+  color: orange;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
