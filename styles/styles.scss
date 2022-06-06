@@ -78,6 +78,32 @@ main {
 				align-content: space-between;
 				padding: 50px 30px 100px;
 
+				.text {
+					padding-top: 90px;
+					transition: 1s;
+
+					h2 {
+						font: 300 2vw/1 "Alegreya Sans SC";
+						color: #fff;
+						margin-bottom: 40px;
+						transition: 1s;
+
+						&::after {
+							content: "";
+							display: block;
+							width: 40px;
+							height: 2px;
+							background: #777;
+							margin-top: 20px;
+							transition: 1.5s;
+						}
+					}
+
+					p {
+						font: 14px/1.4 "arial";
+						color: #777;
+					}
+				}
 				figure {
 					width: 100%;
 					height: 15vh;
@@ -103,6 +129,18 @@ main {
 				}
 
 				.inner {
+					.text {
+						padding-top: 20px;
+
+						h2 {
+							font-size: 5vw;
+							&::after {
+								width: 120px;
+								background: orange;
+							}
+						}
+					}
+
 					figure {
 						height: 20vh;
 						top: 25px;
